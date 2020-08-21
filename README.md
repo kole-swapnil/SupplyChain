@@ -12,7 +12,7 @@ ItemManager : Creating a new item.
 
 Buyer : Pays for the item.
 
-Warehouse : Gets a notification to deliver the address
+Warehouse : Gets a notification to deliver the item to buyer
 
 
 
