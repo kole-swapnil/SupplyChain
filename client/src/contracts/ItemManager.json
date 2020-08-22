@@ -37,8 +37,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -72,8 +71,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -104,8 +102,7 @@
       "name": "triggerPayment",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function",
-      "payable": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -6164,8 +6161,7 @@
     }
   },
   "schemaVersion": "3.1.0",
-  "updatedAt": "2020-08-21T05:40:05.417Z",
-  "networkType": "ethereum",
+  "updatedAt": "2020-08-22T11:07:13.433Z",
   "devdoc": {
     "methods": {}
   },
