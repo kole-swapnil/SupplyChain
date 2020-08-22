@@ -44,9 +44,11 @@ class App extends Component {
     let self = this;
     this.itemManager.events.SupplyChainStep().on("data" ,async function(evt){
     console.log(evt);
+    if(evt.returnValues._step == 1) {
     let itemObj = await self.itemManager.methods.items(evt.returnValues._itemIndex).call();
     alert("Item " + itemObj._identifier + "was paid deliver it");
-    });
+    }
+  });
   }
 
   handleInputChange = (event) =>{
@@ -77,7 +79,7 @@ class App extends Component {
          Cost in Wei : <input type="text" name = "cost" value={this.state.cost} onChange={this.handleInputChange}/>
          Item Identifier: <input type="text" name="itemName" value={this.state.itemName} onChange={this.handleInputChange} />
         <button type ="button" onClick={this.handleSubmit}>Create New Item</button>
-        <div>The stored value is: {this.state.storageValue}</div>
+        
       </div>
     );
   }
