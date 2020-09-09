@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/SupplyChain/static/css/main.5e4e9510.chunk.css",
+    "main.js": "/SupplyChain/static/js/main.571b6e91.chunk.js",
+    "main.js.map": "/SupplyChain/static/js/main.571b6e91.chunk.js.map",
+    "runtime-main.js": "/SupplyChain/static/js/runtime-main.de6d2efd.js",
+    "runtime-main.js.map": "/SupplyChain/static/js/runtime-main.de6d2efd.js.map",
+    "static/js/2.32152a4b.chunk.js": "/SupplyChain/static/js/2.32152a4b.chunk.js",
+    "static/js/2.32152a4b.chunk.js.map": "/SupplyChain/static/js/2.32152a4b.chunk.js.map",
+    "index.html": "/SupplyChain/index.html",
+    "precache-manifest.520be146bac0603bfab5d3c10ec0757e.js": "/SupplyChain/precache-manifest.520be146bac0603bfab5d3c10ec0757e.js",
+    "service-worker.js": "/SupplyChain/service-worker.js",
+    "static/css/main.5e4e9510.chunk.css.map": "/SupplyChain/static/css/main.5e4e9510.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de6d2efd.js",
+    "static/js/2.32152a4b.chunk.js",
+    "static/css/main.5e4e9510.chunk.css",
+    "static/js/main.571b6e91.chunk.js"
+  ]
+}
