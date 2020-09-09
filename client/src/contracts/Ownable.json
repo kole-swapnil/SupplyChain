@@ -20,15 +20,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/E/GithubPrivate/SupplyChain/contracts/Ownable.sol\":\"Ownable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/E/GithubPrivate/SupplyChain/contracts/Ownable.sol\":{\"keccak256\":\"0xb34ecbbe85cb3e1cbbfec0d51dc62119e9818f3ac6e6686fcdc08f637e2cec18\",\"urls\":[\"bzz-raw://d356ed26d7db2f7c5c7037c9ed240237926fbe93dba2af8023b64f8bb8faa159\",\"dweb:/ipfs/QmbKZSDc9nhYtr2Ubv4yCtEVphjeLyHqNaWn6CyWhMBjkN\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060da8061005e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80638f32d59b14602d575b600080fd5b6033604d565b604051808215151515815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161490509056fea2646970667358221220a471342b32584457ae66314665e06f0158a1b8f4dc640685f0bdd9c485cebfea64736f6c63430006000033",
-  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80638f32d59b14602d575b600080fd5b6033604d565b604051808215151515815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161490509056fea2646970667358221220a471342b32584457ae66314665e06f0158a1b8f4dc640685f0bdd9c485cebfea64736f6c63430006000033",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/E/Github/SupplyChain/contracts/Ownable.sol\":\"Ownable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/E/Github/SupplyChain/contracts/Ownable.sol\":{\"keccak256\":\"0xb34ecbbe85cb3e1cbbfec0d51dc62119e9818f3ac6e6686fcdc08f637e2cec18\",\"urls\":[\"bzz-raw://d356ed26d7db2f7c5c7037c9ed240237926fbe93dba2af8023b64f8bb8faa159\",\"dweb:/ipfs/QmbKZSDc9nhYtr2Ubv4yCtEVphjeLyHqNaWn6CyWhMBjkN\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060da8061005e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80638f32d59b14602d575b600080fd5b6033604d565b604051808215151515815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161490509056fea264697066735822122005481227e033dcd70e45751da5641eabe2ed84c74f5adfbbe64a2460ded8a42364736f6c63430006000033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80638f32d59b14602d575b600080fd5b6033604d565b604051808215151515815260200191505060405180910390f35b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161490509056fea264697066735822122005481227e033dcd70e45751da5641eabe2ed84c74f5adfbbe64a2460ded8a42364736f6c63430006000033",
   "sourceMap": "27:322:3:-:0;;;85:58;8:9:-1;5:2;;;30:1;27;20:12;5:2;85:58:3;125:10;116:6;;:19;;;;;;;;;;;;;;;;;;27:322;;;;;;",
   "deployedSourceMap": "27:322:3:-:0;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:322:3;;;;;;;;;;;;;;;;;;;254:92;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;293:4;331:6;;;;;;;;;;;317:20;;:10;:20;;;309:29;;254:92;:::o",
   "source": "pragma solidity ^0.6.0;\r\n\r\ncontract Ownable{\r\n    address payable _owner;\r\n    \r\n    constructor() public{\r\n        _owner = msg.sender;\r\n    }\r\n    \r\n    modifier onlyOwner(){\r\n        require(isOwner(),\"You are not the owner\");\r\n        _;\r\n    }\r\n    function isOwner() public view returns(bool){\r\n        return (msg.sender == _owner);\r\n    }\r\n}\r\n\r\n",
-  "sourcePath": "E:\\GithubPrivate\\SupplyChain\\contracts\\Ownable.sol",
+  "sourcePath": "E:\\Github\\SupplyChain\\contracts\\Ownable.sol",
   "ast": {
-    "absolutePath": "/E/GithubPrivate/SupplyChain/contracts/Ownable.sol",
+    "absolutePath": "/E/Github/SupplyChain/contracts/Ownable.sol",
     "exportedSymbols": {
       "Ownable": [
         379
@@ -467,7 +467,7 @@
     "src": "0:353:3"
   },
   "legacyAST": {
-    "absolutePath": "/E/GithubPrivate/SupplyChain/contracts/Ownable.sol",
+    "absolutePath": "/E/Github/SupplyChain/contracts/Ownable.sol",
     "exportedSymbols": {
       "Ownable": [
         379
@@ -910,8 +910,8 @@
     "version": "0.6.0+commit.26b70077.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.1.0",
-  "updatedAt": "2020-08-22T11:07:13.443Z",
+  "schemaVersion": "3.2.4",
+  "updatedAt": "2020-09-09T14:12:10.555Z",
   "devdoc": {
     "methods": {}
   },
